@@ -1,0 +1,227 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #aea6d1;
+
+}
+
+header {
+    background: #323370;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header img{
+    background-color: #f4f4f4be;
+    border-radius: 50%;
+    padding-top: 0.3em;
+    padding-left: 0.3em;
+    padding-bottom: 0.3em;
+    width: 4rem;
+    height: auto;
+
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header .nav-links {
+    list-style: none;
+}
+
+header .nav-links li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header .nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section */
+.main-section {
+    background: url(/imagenes/fondo.jpeg)  no-repeat center center/cover;
+    content: "";
+    z-index: -1;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.main-section .intro h1 {
+    font-size: 3rem;
+}
+
+.main-section .intro p {
+    font-size: 1.2rem;
+}
+
+.main-section .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #323370;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+}
+
+/* About Section */
+.about-section {
+    position: relative;
+    padding: 2rem;
+    background: #fff;
+    text-align: center;
+}
+
+.about-section h2 {
+    margin-bottom: 1rem;
+}
+
+.scene {
+    width: 4rem;
+    height: auto;
+    perspective: 4rem; /* Controla la perspectiva del efecto 3D */
+    margin:auto; /* Centra la escena en la página */
+}
+/* Estilo para el círculo */
+.circle {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    background-size: cover;
+    border-radius: 50%;
+    background-image: url(/imagenes/Foto.jpeg);
+    background-position: center;
+    transform-style: preserve-3d;
+    box-shadow: 0 0 30px rgba(56, 11, 216, 0.8); /* Brillo alrededor del círculo */
+    animation: spinGlare 30s ease-in-out infinite;
+}
+
+@keyframes spinGlare {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg) scale(1);
+        opacity: 1;
+        box-shadow: 0 0 30px rgba(99, 73, 196, 0.8);
+    }
+    25% {
+        transform: rotateX(0deg) rotateY(180deg) scale(1.1);
+        opacity: 0.9;
+        box-shadow: 0 0 40px rgba(99, 73, 196, 0.8); /* Intensifica el brillo */
+    }
+    50% {
+        transform: rotateX(360deg) rotateY(360deg) scale(1);
+        opacity: 1;
+        box-shadow: 0 0 30px rgba(99, 73, 196, 0.8);
+    }
+    75% {
+        transform: rotateX(540deg) rotateY(540deg) scale(1.1);
+        opacity: 0.9;
+        box-shadow: 0 0 40px rgba(99, 73, 196, 0.8);
+    }
+    100% {
+        transform: rotateX(720deg) rotateY(720deg) scale(1);
+        opacity: 1;
+        box-shadow: 0 0 30px rgba(99, 73, 196, 0.8);
+    }
+}
+
+.imagenamigos{
+    width: 17rem;
+    height: 14rem;
+}
+/* Projects Section */
+.projects-section {
+    padding: 2rem;
+    background: #f9f9f9;
+}
+
+.projects-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.project img {
+    width: 20rem;
+    height: 20rem;
+    margin-right: 1rem;
+}
+
+.project-info {
+    flex: 1;
+}
+.carousel {
+    height: 2rem;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    width: 100%;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    80% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 2rem;
+    background: #fff;
+    text-align: center;
+}
+
+.contact-section ul {
+    list-style: none;
+}
+
+.contact-section ul li {
+    margin: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
