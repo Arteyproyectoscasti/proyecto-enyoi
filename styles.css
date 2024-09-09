@@ -63,7 +63,7 @@ header .nav-links a:hover {
 
 /* Main Section */
 .main-section {
-    background: url(/imagenes/fondo.jpeg)  no-repeat center center/cover;
+    background: url(/prueba/imagenes/fondo.jpeg)  no-repeat center center/cover;
     content: "";
     z-index: -1;
     color: #fff;
@@ -114,7 +114,7 @@ header .nav-links a:hover {
     height: 4rem;
     background-size: cover;
     border-radius: 50%;
-    background-image: url(/imagenes/Foto.jpeg);
+    background-image: url(/prueba/imagenes/Foto.jpeg);
     background-position: center;
     transform-style: preserve-3d;
     box-shadow: 0 0 30px rgba(56, 11, 216, 0.8); /* Brillo alrededor del círculo */
